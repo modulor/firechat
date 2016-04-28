@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>streaming</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!-- Firechat -->
+	<link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
+
+	<link rel="stylesheet" href="css/streaming.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe src="https://www.youtube.com/embed/T49xXBQ0aoQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="well" id="chatMessages"></div>
+				<div class="form-inline">
+					<div class="form-group">
+						<input type="text" id="email" class="form-control" placeholder="email">
+						<input type="text" id="message" class="form-control" placeholder="type a message...">
+						<button type="button" id="btnSend" class="btn btn-success">send</button>
+					</div>
+				</div>
+				<p id="messageDeleted"></p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- firebase -->
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+	<!-- jquery -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+	<!-- bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- firechat -->
+	<script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
+
+	<script src="js/streaming.js"></script>
+</body>
+</html>
